@@ -32,8 +32,6 @@ def main():
         revision=args.revision, commit=args.commit)
 
     report.add_section(
-        section=fastcat.full_report(args.summaries))
-    report.add_section(
         section=scomponents.version_table(args.versions))
     report.add_section(
         section=scomponents.params_table(args.params))
